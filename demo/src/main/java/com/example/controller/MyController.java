@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Controller
-public class QuestionController {
+public class MyController {
 
     private final QuestionRepository questionRepository;
 
@@ -23,6 +23,11 @@ public class QuestionController {
         List<Question> questionList = this.questionRepository.findAll();
         model.addAttribute("questionList", questionList);
         return "question_list";
+    }
+
+    @GetMapping("/")
+    public String root() {
+        return "redirect:/question/list";
     }
 
 }
