@@ -1,6 +1,7 @@
 package com.example.service;
 
 import java.util.List;
+import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Service;
 import com.example.repository.*;
@@ -31,4 +32,14 @@ public class QuestionService {
             throw new DataNotFoundException("question not found");
         }
     }
+
+    public void create(String subject, String content) {
+        Question q = new Question();
+        q.setSubject(subject);
+        q.setContent(content);
+        q.setCreateDate(LocalDateTime.now());
+        this.questionRepository.save(q);
+    }
+
+
 }
