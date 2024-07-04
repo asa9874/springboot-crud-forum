@@ -27,9 +27,9 @@ https://asa9874.tistory.com/246
 https://asa9874.tistory.com/247
 
 <h2>🍃리포지터리</h2>
-https://asa9874.tistory.com/248
-https://asa9874.tistory.com/263
-https://asa9874.tistory.com/264
+https://asa9874.tistory.com/248</p>
+https://asa9874.tistory.com/263</p>
+https://asa9874.tistory.com/264</p>
 
 
 <h2>🍃템플릿, URL 매핑, Thymeleaf</h2>
