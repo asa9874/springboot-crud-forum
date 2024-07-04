@@ -16,18 +16,32 @@ import com.example.model.Question;
 import com.example.repository.AnswerRepository;
 import com.example.repository.QuestionRepository;
 
-
+import com.example.service.QuestionService;
 
 
 @SpringBootTest
 class DemoApplicationTests {
+
+    
 
     @Autowired
     private QuestionRepository questionRepository;
 
     @Autowired
     private AnswerRepository answerRepository;
-
+    
+    @Autowired
+    private QuestionService questionService;
+    
+    //대량생성
+    @Test
+    void testJpa() {
+        for (int i = 1; i <= 300; i++) {
+            String subject = String.format("테스트 데이터입니다:[%03d]", i);
+            String content = "내용무";
+            this.questionService.create(subject, content);
+        }
+    }
     //생성테스트
     @Test
     void testCreateQuestion() {        
@@ -129,4 +143,10 @@ class DemoApplicationTests {
         this.questionRepository.delete(q);
         assertEquals(1, this.questionRepository.count());
     }
+
+
+
+    
+
+
 }
