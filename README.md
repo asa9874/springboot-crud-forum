@@ -2,7 +2,6 @@
 <h3>학습자료</h3>
 <p>🍕점프투 스프링부트</p>
 <p>https://wikidocs.net/book/7601</p>
-<<<<<<< HEAD
 <h1>스프링연습 클론 프로젝트</h1>
 <h3>학습자료</h3>
 <p>🍕점프투 스프링부트</p>
@@ -23,8 +22,6 @@
 <p>12.테스트 작성: 단위 테스트 및 통합 테스트 작성</p>
 <p>13.애플리케이션 실행 및 디버깅: 스프링 부트 애플리케이션 실행 및 디버깅</p>
 <p>14.배포(Deployment): 애플리케이션을 서버 또는 클라우드에 배포</p>
-=======
->>>>>>> 5cc9c6251f955ca79de63098fa8000b8aa01f3d5
 <hr>
 <h2>🍃스프링 부트란?</h2>
 https://asa9874.tistory.com/223
@@ -33,17 +30,14 @@ https://asa9874.tistory.com/223
 https://asa9874.tistory.com/225
 
 <h2>🍃파일구조</h2>
-<<<<<<< HEAD
 https://asa9874.tistory.com/234
 https://asa9874.tistory.com/235
 https://asa9874.tistory.com/236
 https://asa9874.tistory.com/237
-=======
 https://asa9874.tistory.com/234</p>
 https://asa9874.tistory.com/235</p>
 https://asa9874.tistory.com/236</p>
 https://asa9874.tistory.com/237</p>
->>>>>>> 5cc9c6251f955ca79de63098fa8000b8aa01f3d5
 
 
 <h2>🍃URL 매핑, 컨트롤러</h2>
@@ -57,15 +51,12 @@ https://asa9874.tistory.com/246
 https://asa9874.tistory.com/247
 
 <h2>🍃리포지터리</h2>
-<<<<<<< HEAD
 https://asa9874.tistory.com/248
 https://asa9874.tistory.com/263
 https://asa9874.tistory.com/264
-=======
 https://asa9874.tistory.com/248</p>
 https://asa9874.tistory.com/263</p>
 https://asa9874.tistory.com/264</p>
->>>>>>> 5cc9c6251f955ca79de63098fa8000b8aa01f3d5
 
 
 <h2>🍃템플릿, URL 매핑, Thymeleaf</h2>
