@@ -5,6 +5,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import lombok.RequiredArgsConstructor;
 import com.example.model.*;
 import com.example.repository.*;
+import java.util.Optional;
+import com.example.DataNotFoundException;
 
 @RequiredArgsConstructor
 @Service
@@ -21,4 +23,14 @@ public class UserService {
         this.userRepository.save(user);
         return user;
     }
+
+    public SiteUser getUser(String username) {
+        Optional<SiteUser> siteUser = this.userRepository.findByusername(username);
+        if (siteUser.isPresent()) {
+            return siteUser.get();
+        } else {
+            throw new DataNotFoundException("siteuser not found");
+        }
+    }
+    
 }

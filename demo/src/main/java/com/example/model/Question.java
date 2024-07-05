@@ -10,6 +10,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany; 
+import jakarta.persistence.ManyToOne;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -32,4 +34,7 @@ public class Question {
     
     @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE) 
     private List<Answer> answerList; 
+
+    @ManyToOne
+    private SiteUser author;
 }
