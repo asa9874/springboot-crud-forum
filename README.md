@@ -7,6 +7,30 @@
 <p>🍕점프투 스프링부트</p>
 <p>https://wikidocs.net/book/7601</p>
 <hr>
+
+
+<h1>🍃스프링 애플리케이션의 계층역할</h1>
+<h3>🧀리포지터리 (Repository)</h3>
+<p>▶데이터 액세스 로직</p>
+<p>▶데이터베이스 CRUD(Create, Read, Update, Delete) 작업 수행</p>
+<p>▶데이터베이스 쿼리 정의 및 실행</p>
+<p>▶엔티티 객체와 데이터베이스 테이블 간의 매핑 관리</p>
+
+<h3>🧀서비스 (Service)</h3>
+<p>▶비즈니스 로직 처리</p>
+<p>▶트랜잭션 관리</p>
+<p>▶데이터 변환 및 가공</p>
+<p>▶여러 리포지터리를 사용하여 복잡한 작업 수행</p>
+
+
+<h3>🧀컨트롤러 (Controller)</h3>
+<p>▶HTTP 요청 처리</p>
+<p>▶URL 매핑</p>
+<p>▶서비스 계층 호출</p>
+<p>▶요청 데이터 검증</p>
+<p>▶뷰(View) 선택 및 데이터 전달</p>
+
+<hr>
 <h1>🍃스프링 부트개발 순서</h1>
 <p>1.프로젝트 생성: 스프링 이니셜라이저 사용하여 프로젝트 생성</p>
 <p>2.프로젝트 구조 설정: 패키지 구조 정의</p>
@@ -34,7 +58,7 @@ https://asa9874.tistory.com/234
 https://asa9874.tistory.com/235
 https://asa9874.tistory.com/236
 https://asa9874.tistory.com/237
-https://asa9874.tistory.com/234</p>
+https://asa9874.tistory.com/234</>
 https://asa9874.tistory.com/235</p>
 https://asa9874.tistory.com/236</p>
 https://asa9874.tistory.com/237</p>

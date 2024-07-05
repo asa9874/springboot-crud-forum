@@ -4,7 +4,6 @@
     <h5>질문등록</h5>
     <form th:action="@{/question/create}" th:object="${questionForm}" method="post">
         <div th:replace="~{form_errors :: formErrorsFragment}"></div>
-        </div>
         <label for="subject" class="form-label">제목</label>
         <input type="text" th:field="*{subject}" class="form-control">
         <p></p>
