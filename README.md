@@ -1,4 +1,8 @@
-<h1>스프링연습 클론 프로젝트(2024.07)</h1>
+<h1>스프링연습 클론 프로젝트 게시판구현(2024.07)</h1>
+
+![image](https://github.com/asa9874/springboot_learning/assets/84450816/f221851c-a98b-49e5-9579-9f1707f04339)
+
+
 <h3>학습자료</h3>
 <p>🍕점프투 스프링부트</p>
 <p>https://wikidocs.net/book/7601</p>
@@ -54,11 +58,11 @@ https://asa9874.tistory.com/223
 https://asa9874.tistory.com/225
 
 <h2>🍃파일구조</h2>
-https://asa9874.tistory.com/234
-https://asa9874.tistory.com/235
-https://asa9874.tistory.com/236
-https://asa9874.tistory.com/237
-https://asa9874.tistory.com/234</>
+https://asa9874.tistory.com/234</p>
+https://asa9874.tistory.com/235</p>
+https://asa9874.tistory.com/236</p>
+https://asa9874.tistory.com/237</p>
+https://asa9874.tistory.com/234</p>
 https://asa9874.tistory.com/235</p>
 https://asa9874.tistory.com/236</p>
 https://asa9874.tistory.com/237</p>
@@ -75,22 +79,22 @@ https://asa9874.tistory.com/246
 https://asa9874.tistory.com/247
 
 <h2>🍃리포지터리</h2>
-https://asa9874.tistory.com/248
-https://asa9874.tistory.com/263
-https://asa9874.tistory.com/264
+https://asa9874.tistory.com/248</p>
+https://asa9874.tistory.com/263</p>
+https://asa9874.tistory.com/264</p>
 https://asa9874.tistory.com/248</p>
 https://asa9874.tistory.com/263</p>
 https://asa9874.tistory.com/264</p>
 
 
 <h2>🍃템플릿, URL 매핑, Thymeleaf</h2>
-https://asa9874.tistory.com/265
+https://asa9874.tistory.com/265</p>
 
 <h2>🍃루트 URL 설정</h2>
-https://asa9874.tistory.com/266
+https://asa9874.tistory.com/266</p>
 
 <h2>🍃서비스</h2>
-https://asa9874.tistory.com/268
+https://asa9874.tistory.com/268</p>
 
 
 <h2>🍃RequestMapping</h2>
@@ -104,3 +108,19 @@ https://asa9874.tistory.com/277
 
 <h2>🍃스프링 시큐리티</h2>
 https://asa9874.tistory.com/280
+
+<h2>🍃회원가입</h2>
+https://asa9874.tistory.com/284
+
+<h2>🍃로그인,로그아웃</h2>
+https://asa9874.tistory.com/286
+
+<h2>🍃글쓴이,추천기능</h2>
+https://asa9874.tistory.com/289
+https://asa9874.tistory.com/301
+
+<h2>🍃수정,삭제</h2>
+https://asa9874.tistory.com/300
+
+<h2>🍃검색</h2>
+https://asa9874.tistory.com/302
