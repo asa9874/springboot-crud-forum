@@ -3,7 +3,21 @@
 <div layout:fragment="content">
 <h1 th:text="${question.subject}"></h1>
 <div th:text="${question.content}"></div>
-
+<div th:if="${question.modifyDate != null}" class="badge bg-light text-dark p-2 text-start mx-3">
+    <div class="mb-2">modified at</div>
+    <div th:text="${#temporals.format(question.modifyDate, 'yyyy-MM-dd HH:mm')}"></div>
+</div>
+<!--수정,삭제-->
+<div class="my-3">
+    <a th:href="@{|/question/modify/${question.id}|}" class="btn btn-sm btn-outline-secondary"
+        sec:authorize="isAuthenticated()"
+        th:if="${question.author != null and #authentication.getPrincipal().getUsername() == question.author.username}"
+        th:text="수정"></a>
+    <a href="javascript:void(0);" th:data-uri="@{|/question/delete/${question.id}|}"
+        class="delete btn btn-sm btn-outline-secondary" sec:authorize="isAuthenticated()"
+        th:if="${question.author != null and #authentication.getPrincipal().getUsername() == question.author.username}"
+        th:text="삭제"></a>
+</div>
 
 
 <h5 th:text="|${#lists.size(question.answerList)}개의 답변이 있습니다.|"></h5>
@@ -17,6 +31,22 @@
                 </div>
                 <div th:text="${#temporals.format(answer.createDate, 'yyyy-MM-dd HH:mm')}"></div>
             </div>
+            <div th:if="${answer.modifyDate != null}" class="badge bg-light text-dark p-2 text-start mx-3">
+                <div class="mb-2">modified at</div>
+                <div th:text="${#temporals.format(answer.modifyDate, 'yyyy-MM-dd HH:mm')}"></div>
+            </div>
+            <!--수정삭제-->
+            <div class="my-3">
+                <a th:href="@{|/answer/modify/${answer.id}|}" class="btn btn-sm btn-outline-secondary"
+                    sec:authorize="isAuthenticated()"
+                    th:if="${answer.author != null and #authentication.getPrincipal().getUsername() == answer.author.username}"
+                    th:text="수정"></a>
+            </div>
+            <a href="javascript:void(0);" th:data-uri="@{|/answer/delete/${answer.id}|}"
+                class="delete btn btn-sm btn-outline-secondary" sec:authorize="isAuthenticated()"
+                th:if="${answer.author != null and #authentication.getPrincipal().getUsername() == answer.author.username}"
+                th:text="삭제"></a>
+
         </div>
     </div>
 </div>
@@ -26,5 +56,18 @@
     <textarea sec:authorize="isAnonymous()" disabled th:field="*{content}" class="form-control" rows="10"></textarea>
         <textarea sec:authorize="isAuthenticated()" th:field="*{content}" class="form-control" rows="10"></textarea>
     <input type="submit" value="답변등록">
+    
 </form>
 </div>
+
+
+<script layout:fragment="script" type='text/javascript'>
+const delete_elements = document.getElementsByClassName("delete");
+Array.from(delete_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 삭제하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+</script>
