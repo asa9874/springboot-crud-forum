@@ -1,5 +1,6 @@
 package com.example.repository;
 
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.model.Question;
@@ -12,4 +13,5 @@ public interface QuestionRepository extends JpaRepository<Question, Integer> {
     Question findBySubjectAndContent(String subject, String content);
     List<Question> findBySubjectLike(String subject);
     Page<Question> findAll(Pageable pageable);
+    Page<Question> findAll(Specification<Question> spec, Pageable pageable);
 }
